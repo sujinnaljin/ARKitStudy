@@ -28,7 +28,7 @@ class DisplayingSampleViewController: UIViewController, ARSCNViewDelegate {
         let scene = SCNScene()
         //geometry for the text
         // extrusionDepth - depth of the text. so if I'm putting one over here basically the thing that the depth will be from minus 0.5 to positive 0.5.
-        let textGeometry = SCNText(string: "hello world", extrusionDepth: 0)
+        let textGeometry = SCNText(string: "hello world", extrusionDepth: 1.0)
         //바꾸지 않으면 defualt 는 white
         textGeometry.firstMaterial?.diffuse.contents = UIColor.black
         
