@@ -31,8 +31,8 @@ class SimpleBoxWithTouchViewController: UIViewController, ARSCNViewDelegate {
         let material = SCNMaterial()
         material.diffuse.contents = UIColor.red
         material.name = "Color"
+        box.materials = [material]
         let node = SCNNode(geometry: box)
-        node.geometry?.materials = [material]
         node.position = SCNVector3(0, 0, -0.5)
         scene.rootNode.addChildNode(node)
         
