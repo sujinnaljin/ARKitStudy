@@ -14,6 +14,7 @@
 		3B5EC07A217E5B000094802C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5EC079217E5B000094802C /* Assets.xcassets */; };
 		3B5EC07D217E5B000094802C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5EC07B217E5B000094802C /* LaunchScreen.storyboard */; };
 		3B872CA1217F225E00498F97 /* SimpleBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B872CA0217F225E00498F97 /* SimpleBoxViewController.swift */; };
+		3B872CA8217F429C00498F97 /* DisplayingSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B872CA7217F429C00498F97 /* DisplayingSampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3B5EC07C217E5B000094802C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B5EC07E217E5B000094802C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B872CA0217F225E00498F97 /* SimpleBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBoxViewController.swift; sourceTree = "<group>"; };
+		3B872CA7217F429C00498F97 /* DisplayingSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayingSampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		3B5EC06F217E5B000094802C /* HelloAR */ = {
 			isa = PBXGroup;
 			children = (
+				3B872CA6217F428000498F97 /* TextView */,
 				3B872C9F217F223D00498F97 /* SimpleBox */,
 				3B5EC070217E5B000094802C /* AppDelegate.swift */,
 				3B5EC072217E5B000094802C /* art.scnassets */,
@@ -76,6 +79,14 @@
 				3B872CA0217F225E00498F97 /* SimpleBoxViewController.swift */,
 			);
 			path = SimpleBox;
+			sourceTree = "<group>";
+		};
+		3B872CA6217F428000498F97 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				3B872CA7217F429C00498F97 /* DisplayingSampleViewController.swift */,
+			);
+			path = TextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B872CA8217F429C00498F97 /* DisplayingSampleViewController.swift in Sources */,
 				3B5EC075217E5B000094802C /* ViewController.swift in Sources */,
 				3B872CA1217F225E00498F97 /* SimpleBoxViewController.swift in Sources */,
 				3B5EC071217E5B000094802C /* AppDelegate.swift in Sources */,

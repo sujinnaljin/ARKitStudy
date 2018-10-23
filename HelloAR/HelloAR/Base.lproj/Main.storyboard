@@ -24,11 +24,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="105" y="34"/>
         </scene>
-        <!--Simple Box View Controller-->
+        <!--Displaying Sample View Controller-->
         <scene sceneID="Brs-FW-hea">
             <objects>
-                <viewController id="iC3-12-cnb" customClass="SimpleBoxViewController" customModule="HelloAR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iC3-12-cnb" customClass="DisplayingSampleViewController" customModule="HelloAR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xT0-la-f6L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
