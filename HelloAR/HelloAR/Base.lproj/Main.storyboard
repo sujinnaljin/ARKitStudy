@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="105" y="34"/>
         </scene>
-        <!--Multiple Objects View Controller-->
+        <!--Simple Box With Touch View Controller-->
         <scene sceneID="Brs-FW-hea">
             <objects>
-                <viewController id="iC3-12-cnb" customClass="MultipleObjectsViewController" customModule="HelloAR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iC3-12-cnb" customClass="SimpleBoxWithTouchViewController" customModule="HelloAR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xT0-la-f6L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
