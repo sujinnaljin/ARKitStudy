@@ -20,6 +20,7 @@
 		3B872CAF217F6AD200498F97 /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B872CAE217F6AD200498F97 /* earth.jpg */; };
 		3B872CB2217F944B00498F97 /* SimpleBoxWithTouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B872CB1217F944B00498F97 /* SimpleBoxWithTouchViewController.swift */; };
 		3B872CB4217F97F200498F97 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B872CB3217F97F200498F97 /* Extension.swift */; };
+		3BC9A91321887D51005B3AF3 /* DetectingPlanesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC9A91221887D51005B3AF3 /* DetectingPlanesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		3B872CAE217F6AD200498F97 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
 		3B872CB1217F944B00498F97 /* SimpleBoxWithTouchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBoxWithTouchViewController.swift; sourceTree = "<group>"; };
 		3B872CB3217F97F200498F97 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		3BC9A91221887D51005B3AF3 /* DetectingPlanesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectingPlanesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +72,12 @@
 		3B5EC06F217E5B000094802C /* HelloAR */ = {
 			isa = PBXGroup;
 			children = (
-				3B872CB0217F943A00498F97 /* SimpleBoxWithTouch */,
-				3B872CA9217F500600498F97 /* MultipleObjects */,
-				3B872CA6217F428000498F97 /* TextView */,
+				3BC9A91121887C07005B3AF3 /* ObjectsOnPlane */,
+				3BC9A91021887BEE005B3AF3 /* DetectingPlanes */,
 				3B872C9F217F223D00498F97 /* SimpleBox */,
+				3B872CA6217F428000498F97 /* TextView */,
+				3B872CA9217F500600498F97 /* MultipleObjects */,
+				3B872CB0217F943A00498F97 /* SimpleBoxWithTouch */,
 				3B5EC070217E5B000094802C /* AppDelegate.swift */,
 				3B5EC072217E5B000094802C /* art.scnassets */,
 				3B5EC074217E5B000094802C /* ViewController.swift */,
@@ -118,6 +122,21 @@
 				3B872CB1217F944B00498F97 /* SimpleBoxWithTouchViewController.swift */,
 			);
 			path = SimpleBoxWithTouch;
+			sourceTree = "<group>";
+		};
+		3BC9A91021887BEE005B3AF3 /* DetectingPlanes */ = {
+			isa = PBXGroup;
+			children = (
+				3BC9A91221887D51005B3AF3 /* DetectingPlanesViewController.swift */,
+			);
+			path = DetectingPlanes;
+			sourceTree = "<group>";
+		};
+		3BC9A91121887C07005B3AF3 /* ObjectsOnPlane */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ObjectsOnPlane;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +221,7 @@
 				3B5EC075217E5B000094802C /* ViewController.swift in Sources */,
 				3B872CA1217F225E00498F97 /* SimpleBoxViewController.swift in Sources */,
 				3B5EC071217E5B000094802C /* AppDelegate.swift in Sources */,
+				3BC9A91321887D51005B3AF3 /* DetectingPlanesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
