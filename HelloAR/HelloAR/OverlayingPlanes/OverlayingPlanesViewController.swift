@@ -39,6 +39,47 @@ class OverlayingPlanesViewController: UIViewController, ARSCNViewDelegate {
         
         // Set the scene to the view
         sceneView.scene = scene
+        registerGestureRecognizers()
+    }
+    
+    
+    private func registerGestureRecognizers() {
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
+        self.sceneView.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc func tapped(recognizer :UIGestureRecognizer) {
+        
+        let sceneView = recognizer.view as! ARSCNView
+        let touchLocation = recognizer.location(in: sceneView)
+        
+        let hitTestResult = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
+        
+        if !hitTestResult.isEmpty {
+            
+            guard let hitResult = hitTestResult.first else {
+                return
+            }
+            addBox(hitResult :hitResult)
+        }
+    }
+    private func addBox(hitResult :ARHitTestResult) {
+        
+        let boxGeometry = SCNBox(width: 0.2, height: 0.2, length: 0.1, chamferRadius: 0)
+        let material = SCNMaterial()
+        material.diffuse.contents = UIColor.red
+        
+        boxGeometry.materials = [material]
+        
+        let boxNode = SCNNode(geometry: boxGeometry)
+        print("hietrueslt : \(hitResult.worldTransform.columns.3)")
+        
+        boxNode.position = SCNVector3(hitResult.worldTransform.columns.3.x,hitResult.worldTransform.columns.3.y + Float(boxGeometry.height/2), hitResult.worldTransform.columns.3.z)
+    
+        
+        self.sceneView.scene.rootNode.addChildNode(boxNode)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,7 +99,7 @@ class OverlayingPlanesViewController: UIViewController, ARSCNViewDelegate {
         if !(anchor is ARPlaneAnchor) {
             return
         }
-        
+
         let plane = OverlayPlane(anchor: anchor as! ARPlaneAnchor)
         self.planes.append(plane)
         node.addChildNode(plane)
@@ -69,6 +110,8 @@ class OverlayingPlanesViewController: UIViewController, ARSCNViewDelegate {
         let plane = self.planes.filter { plane in
             return plane.anchor.identifier == anchor.identifier
             }.first
+       
+       
 
         if plane == nil {
             return
