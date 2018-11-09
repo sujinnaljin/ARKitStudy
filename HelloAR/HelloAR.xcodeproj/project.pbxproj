@@ -16,6 +16,7 @@
 		3B618D392188A588002AA2D4 /* OverlayingPlanesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B618D382188A588002AA2D4 /* OverlayingPlanesViewController.swift */; };
 		3B618D3B2188A626002AA2D4 /* OverlayPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B618D3A2188A626002AA2D4 /* OverlayPlane.swift */; };
 		3B618D3D2188A646002AA2D4 /* overlay_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B618D3C2188A646002AA2D4 /* overlay_grid.png */; };
+		3B6697B421956814008789E3 /* EnablingPhysicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6697B321956814008789E3 /* EnablingPhysicsVC.swift */; };
 		3B872CA1217F225E00498F97 /* SimpleBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B872CA0217F225E00498F97 /* SimpleBoxViewController.swift */; };
 		3B872CA8217F429C00498F97 /* DisplayingSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B872CA7217F429C00498F97 /* DisplayingSampleViewController.swift */; };
 		3B872CAB217F501B00498F97 /* MultipleObjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B872CAA217F501B00498F97 /* MultipleObjectsViewController.swift */; };
@@ -38,6 +39,7 @@
 		3B618D382188A588002AA2D4 /* OverlayingPlanesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayingPlanesViewController.swift; sourceTree = "<group>"; };
 		3B618D3A2188A626002AA2D4 /* OverlayPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPlane.swift; sourceTree = "<group>"; };
 		3B618D3C2188A646002AA2D4 /* overlay_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_grid.png; sourceTree = "<group>"; };
+		3B6697B321956814008789E3 /* EnablingPhysicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnablingPhysicsVC.swift; sourceTree = "<group>"; };
 		3B872CA0217F225E00498F97 /* SimpleBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBoxViewController.swift; sourceTree = "<group>"; };
 		3B872CA7217F429C00498F97 /* DisplayingSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayingSampleViewController.swift; sourceTree = "<group>"; };
 		3B872CAA217F501B00498F97 /* MultipleObjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleObjectsViewController.swift; sourceTree = "<group>"; };
@@ -78,8 +80,8 @@
 		3B5EC06F217E5B000094802C /* HelloAR */ = {
 			isa = PBXGroup;
 			children = (
+				3B6697B2219567F9008789E3 /* EnablingPhysics */,
 				3B618D372188A576002AA2D4 /* OverlayingPlanes */,
-				3BC9A91121887C07005B3AF3 /* ObjectsOnPlane */,
 				3B872C9F217F223D00498F97 /* SimpleBox */,
 				3B872CA6217F428000498F97 /* TextView */,
 				3B872CA9217F500600498F97 /* MultipleObjects */,
@@ -105,6 +107,14 @@
 				3B618D3C2188A646002AA2D4 /* overlay_grid.png */,
 			);
 			path = OverlayingPlanes;
+			sourceTree = "<group>";
+		};
+		3B6697B2219567F9008789E3 /* EnablingPhysics */ = {
+			isa = PBXGroup;
+			children = (
+				3B6697B321956814008789E3 /* EnablingPhysicsVC.swift */,
+			);
+			path = EnablingPhysics;
 			sourceTree = "<group>";
 		};
 		3B872C9F217F223D00498F97 /* SimpleBox */ = {
@@ -147,13 +157,6 @@
 				3BC9A91221887D51005B3AF3 /* DetectingPlanesViewController.swift */,
 			);
 			path = DetectingPlanes;
-			sourceTree = "<group>";
-		};
-		3BC9A91121887C07005B3AF3 /* ObjectsOnPlane */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ObjectsOnPlane;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +238,7 @@
 				3B872CB2217F944B00498F97 /* SimpleBoxWithTouchViewController.swift in Sources */,
 				3B872CA8217F429C00498F97 /* DisplayingSampleViewController.swift in Sources */,
 				3B872CB4217F97F200498F97 /* Extension.swift in Sources */,
+				3B6697B421956814008789E3 /* EnablingPhysicsVC.swift in Sources */,
 				3B872CAB217F501B00498F97 /* MultipleObjectsViewController.swift in Sources */,
 				3B5EC075217E5B000094802C /* ViewController.swift in Sources */,
 				3B872CA1217F225E00498F97 /* SimpleBoxViewController.swift in Sources */,
