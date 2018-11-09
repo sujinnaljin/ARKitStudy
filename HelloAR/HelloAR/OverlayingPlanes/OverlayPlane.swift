@@ -28,11 +28,7 @@ class OverlayPlane : SCNNode {
         self.planeGeometry.width = CGFloat(anchor.extent.x);
         self.planeGeometry.height = CGFloat(anchor.extent.z);
         self.position = SCNVector3Make(anchor.center.x, 0, anchor.center.z);
-        
-        let planeNode = self.childNodes.first!
-        
-        planeNode.physicsBody = SCNPhysicsBody(type: .static, shape: SCNPhysicsShape(geometry: self.planeGeometry, options: nil))
-        
+            
     }
     
     private func setup() {
