@@ -10,6 +10,11 @@ import UIKit
 import SceneKit
 import ARKit
 
+enum BodyType : Int {
+    case box = 1
+    case plane = 2
+}
+
 class EnablingPhysicsVC: UIViewController, ARSCNViewDelegate {
 
     var sceneView: ARSCNView!
@@ -55,7 +60,7 @@ class EnablingPhysicsVC: UIViewController, ARSCNViewDelegate {
     }
     private func addBox(hitResult :ARHitTestResult) {
         
-        let boxGeometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0)
+        let boxGeometry = SCNBox(width: 0.2, height: 0.2, length: 0.1, chamferRadius: 0)
         let material = SCNMaterial()
         material.diffuse.contents = UIColor.red
         
@@ -65,6 +70,7 @@ class EnablingPhysicsVC: UIViewController, ARSCNViewDelegate {
      
         //physicsBody 적용한 부분
         boxNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
+        boxNode.physicsBody?.categoryBitMask = BodyType.box.rawValue
         boxNode.position = SCNVector3(hitResult.worldTransform.columns.3.x,hitResult.worldTransform.columns.3.y + Float(0.5), hitResult.worldTransform.columns.3.z)
 
         self.sceneView.scene.rootNode.addChildNode(boxNode)
