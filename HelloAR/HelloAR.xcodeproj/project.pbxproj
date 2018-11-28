@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B34E45E21AEB64C0038D1CC /* LoadingModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B34E45D21AEB64C0038D1CC /* LoadingModelViewController.swift */; };
 		3B5EC071217E5B000094802C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EC070217E5B000094802C /* AppDelegate.swift */; };
 		3B5EC073217E5B000094802C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5EC072217E5B000094802C /* art.scnassets */; };
 		3B5EC075217E5B000094802C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EC074217E5B000094802C /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B34E45D21AEB64C0038D1CC /* LoadingModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingModelViewController.swift; sourceTree = "<group>"; };
 		3B5EC06D217E5B000094802C /* HelloAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B5EC070217E5B000094802C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B5EC072217E5B000094802C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B34E45C21AEB62F0038D1CC /* LoadingModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B34E45D21AEB64C0038D1CC /* LoadingModelViewController.swift */,
+			);
+			path = LoadingModel;
+			sourceTree = "<group>";
+		};
 		3B5EC064217E5B000094802C = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 		3B5EC06F217E5B000094802C /* HelloAR */ = {
 			isa = PBXGroup;
 			children = (
+				3B34E45C21AEB62F0038D1CC /* LoadingModel */,
 				3B6697B2219567F9008789E3 /* EnablingPhysics */,
 				3B618D372188A576002AA2D4 /* OverlayingPlanes */,
 				3B872C9F217F223D00498F97 /* SimpleBox */,
@@ -241,6 +252,7 @@
 				3B6697B421956814008789E3 /* EnablingPhysicsVC.swift in Sources */,
 				3B872CAB217F501B00498F97 /* MultipleObjectsViewController.swift in Sources */,
 				3B5EC075217E5B000094802C /* ViewController.swift in Sources */,
+				3B34E45E21AEB64C0038D1CC /* LoadingModelViewController.swift in Sources */,
 				3B872CA1217F225E00498F97 /* SimpleBoxViewController.swift in Sources */,
 				3B5EC071217E5B000094802C /* AppDelegate.swift in Sources */,
 				3B618D392188A588002AA2D4 /* OverlayingPlanesViewController.swift in Sources */,
